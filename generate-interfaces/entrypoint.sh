@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Wait until an introspection query would work
 # Then run the interface generator
 URL="$INPUT_SERVER_ENDPOINT"
