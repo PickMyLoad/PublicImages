@@ -3,5 +3,8 @@ RUN yarn global add lerna@^3.3.0
 
 WORKDIR /working_dir
 VOLUME /working_dir
-ENTRYPOINT ["lerna"]
+VOLUME /home/node/.ssh
+ENV NPM_TOKEN=
+COPY --chown=node entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 CMD [""]
