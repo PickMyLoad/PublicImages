@@ -3,5 +3,5 @@
 if [ -z "$@" ]; then
   /bin/sh
 else
-  typeorm --require ts-node/register "$@"
+  ts-node /usr/local/share/.config/yarn/global/node_modules/typeorm/cli.js $@
 fi
