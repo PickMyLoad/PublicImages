@@ -1,5 +1,5 @@
 FROM node:9.8.0-alpine
-RUN yarn global add pg^7.4.3 typeorm@^0.2.6
+RUN yarn global add pg@^7.4.3 typeorm@^0.2.6
 
 WORKDIR /working_dir
 VOLUME /working_dir
