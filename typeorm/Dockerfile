@@ -1,5 +1,5 @@
 FROM node:9.8.0-alpine
-RUN yarn global add pg@^7.4.3 typeorm@^0.2.6
+RUN yarn global add typescript@^2.9.1 ts-node@^6.0.5 pg@^7.4.3 typeorm@^0.2.6
 
 WORKDIR /working_dir
 VOLUME /working_dir
@@ -27,5 +27,6 @@ ENV TYPEORM_ENTITIES_DIR=
 ENV TYPEORM_MIGRATIONS_DIR=
 ENV TYPEORM_SUBSCRIBERS_DIR=
 ENV TYPEORM_DRIVER_EXTRA=
-ENTRYPOINT ["typeorm"]
+COPY --chown=node entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 CMD [""]
