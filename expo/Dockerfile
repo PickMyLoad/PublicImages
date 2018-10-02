@@ -1,5 +1,5 @@
 FROM node:9.8.0-alpine
-RUN yarn global add expo-cli@^27.0.1
+RUN yarn global add expo-cli@^2.2.0
 
 WORKDIR /working_dir
 VOLUME /working_dir
