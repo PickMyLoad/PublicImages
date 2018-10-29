@@ -1,4 +1,4 @@
-FROM node:9.8.0-alpine
+FROM node:10.12.0-alpine
 RUN yarn global add typescript@^2.9.1 ts-node@^6.0.5 pg@^7.4.3 typeorm@^0.2.6
 
 WORKDIR /working_dir

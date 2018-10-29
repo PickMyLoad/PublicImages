@@ -1,4 +1,4 @@
-FROM node:9.8.0-alpine
+FROM node:10.12.0-alpine
 RUN yarn global add lerna@^3.3.0
 RUN apk add --no-cache git openssh
 WORKDIR /working_dir

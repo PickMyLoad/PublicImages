@@ -1,4 +1,4 @@
-FROM node:9.8.0-alpine
+FROM node:10.12.0-alpine
 RUN apk add --no-cache bash
 RUN yarn global add expo-cli@^2.2.0
 
