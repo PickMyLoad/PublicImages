@@ -1,5 +1,5 @@
 FROM node:10.12.0-alpine
-RUN yarn global add lerna@^3.3.0
+RUN yarn global add lerna@^3.5.1
 RUN apk add --no-cache git openssh
 WORKDIR /working_dir
 VOLUME /working_dir
